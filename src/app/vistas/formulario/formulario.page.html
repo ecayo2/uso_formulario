@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>formulario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Ingrese datos en el formulario</ion-card-subtitle>
+      <ion-card-title>Formulario de dos Campos</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Campo 1</ion-label>
+        <ion-input type="text" name="campo1" [(ngModel)]="datos_formulario.campo1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Campo 2</ion-label>
+        <ion-input type="text" name="campo2" [(ngModel)]="datos_formulario.campo2"></ion-input>
+      </ion-item>
+      <ion-button (click)="enviarDatos()" expand="full"  >Registrar</ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
